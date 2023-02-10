@@ -54,7 +54,14 @@ localStorage.setItem('item2','list2')
 localStorage.setItem('item3','list3')
 localStorage.setItem('item4','list4')
 document.cookie = 'list=list[]; expires=' + new Date(9999,0,1).toDateString();
+let myObj = {
+    list1, 
+    list2,
+    list3,
 }
+localStorage.setItem('details', JSON.stringify(myObj))
+}
+
 
 // Filter Items
 function filterItems(e){
