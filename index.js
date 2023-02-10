@@ -57,8 +57,8 @@ function filterItems(e){
   var items = itemList.getElementsByTagName('li');
   // Convert to an array
   Array.from(items).forEach(function(item){
-    var itemName = item.firstChild.textContent;
-    if(itemName.toLowerCase().indexOf(text) != -1){
+    var itemName = item.firstChild[1].textContent;
+    if(itemName.toLowerCase().indexOf(text) !=  -1 || RTCSessionDescription.toLowerCase().indexOf(text) != -1){
       item.style.display = 'block';
     } else {
       item.style.display = 'none';
