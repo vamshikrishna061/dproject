@@ -48,6 +48,13 @@ function removeItem(e){
     }
   }
 }
+const saveToLocalStorage (event) {
+localStorage.setItem('list1','list1');
+localStorage.setItem('item2','list2')
+localStorage.setItem('item3','list3')
+localStorage.setItem('item4','list4')
+document.cookie = 'list=list[]; expires=' + new Date(9999,0,1).toDateString();
+}
 
 // Filter Items
 function filterItems(e){
@@ -65,3 +72,5 @@ function filterItems(e){
     }
   });
 }
+
+ 
